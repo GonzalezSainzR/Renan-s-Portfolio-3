@@ -8,7 +8,25 @@ $("document").ready(function () {
     $("h1").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
 
     $('hi').bind('click', mouseClick);
+    
+    $('replaceWText').bind('click', replaceWText);
+    
+    $('#ranPara').bind('click', addAPara);
+    
+    $('#randPara').bind('click', removeAPara);
 });
+
+function removeAPara () {
+    $('#ranPara p:last').remove();
+}
+
+function addAPara () {
+    $('#ranPara').append('<p>ADDED</p>')
+}
+
+function replaceWText () {
+    $('replaceWText').text('replaced');
+}
 
 function mouseOverMe() {
     $("h1").html("Lol u suck n00b");
