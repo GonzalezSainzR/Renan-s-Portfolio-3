@@ -13,16 +13,7 @@ $("document").ready(function () {
 function mouseOverMe() {
     $("h1").html("Lol u suck n00b");
     
-    $(".yeah").css('background-color', 'green');
-    $(".yeah").css('background-color', 'blue');
-    $(".yeah").css('background-color', 'green');
-    $(".yeah").css('background-color', 'blue');
-    $(".yeah").css('background-color', 'green');
-    $(".yeah").css('background-color', 'blue');
-    $(".yeah").css('background-color', 'green');
-    $(".yeah").css('background-color', 'blue');
-    $(".yeah").css('background-color', 'green');
-    $(".yeah").css('background-color', 'blue');
+    //$(".yeah").css('background-color', 'green');
     
 }
 
