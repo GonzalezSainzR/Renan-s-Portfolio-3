@@ -17,7 +17,7 @@ and open the template in the editor.
         <link type="text/css" rel="stylesheet" href="css/custom-style.css">
     </head>
     <body>
-        <nav class="navbar navbar-default">
+        <nav  id='Navbar' class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -36,7 +36,7 @@ and open the template in the editor.
         <li class="active"><a href="#">About me<span class="sr-only">(current)</span></a></li>
         <li><a href="#">Technology</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Projects <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Projects <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="#">Action</a></li>
             <li><a href="#">Another action</a></li>
@@ -57,23 +57,30 @@ and open the template in the editor.
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-        <button id="show">Show the Image</button>
+ 
+ <!-- Jumbotron -->
+        <div  class="jumbotron">
+            <h1 id='Pop'>Welcome</h1>
+            <p id='subtitle'>This is my Jquery test page</p>
+                </div>
+            </div>
+        </div>       
+        <div id="superHumans">
+            <h3>Showing off Jquery</h3>
         <div class="yeah">
-            <h1>Click to find out more</h1>
-            <p id="randPara">No Daniel make your own</p>
-            <p id="replaceWText">Hi</p>
-            <p id="ranPara">3</p>
-            <p id="lego">siblings</p>
+            <button id="show">Show the Image</button>
+            <h1 id='asterisk' >Hover over me.</h1>
+            <p  id='LooL'>Click the image to make it explode</p>
+            <p id="ranPara">click me to start subtracting</p>
+            <p id="randPara">Click me to start adding.</p>
             <img id="Logo" src="IMG/photo.jpg" alt=""/>
         </div>
-        <div id="superHumans">
-            <h3>First</h3>
-            <p>1st</p>
              <h3>First</h3>
             <p>1st</p>
              <h3>First</h3>
             <p>1st</p>
         </div>
+       <script src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="script.js"></script>
     </body>
 </html>

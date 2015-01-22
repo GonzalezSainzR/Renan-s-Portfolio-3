@@ -1,10 +1,23 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : Jan 15, 2015, 2:44:11 PM
-    Author     : Student
-*/
+.jumbotron {
+    background-color: #d5d5d5;
+    text-align: center;
+    background-image: url("http://gadgetsoutlook.com/wp-content/uploads/2013/04/Nasdaq-Stock-Market.jpg");
+    
+}
 
+/*Div properties*/
+#jumbotron {
+    border-style: none;
+    border-width: 5px;
+    padding: 20px;
+    background-color: #F9F9F9;
+}
+
+/*body properties*/
+body {
+    background-color: #F9F9F9;
+}
+/*button properties*/
+#jumbotron ,.btn-group {
+    background-color: #d5d5d5;
+}

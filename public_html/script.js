@@ -1,27 +1,25 @@
 $("document").ready(function () {
-    $('.yeah').css('background-color', 'skyblue');
+    $('.yeah, #asterisk').css('background-color', 'skyblue');
     
     $('#superHumans').accordion({header: "h3"});
 
-    //$('div p:first-child').css('background-color', 'pink');
+    $("#asterisk").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
 
-    //$('p:last').css('color', 'red');
-
-    $("h1").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
-
-    $('h1').bind('click', mouseClick);
+    $('#asterisk').bind('click', mouseClick);
     
     $('replaceWText').bind('click', replaceWText);
     
-    $('#ranPara').bind('click', addAPara);
+    $('#randPara').bind('click', addAPara);
     
-    $('#randPara').bind('click', removeAPara);
+    $('#ranPara').bind('click', removeAPara);
     
     $('#Logo').bind('click', hideTheImage);
     
     $('#show').bind('click', showTheImage);
     
-    //$('#show').css('visibility', 'hidden');
+    $('#Navbar').draggable();
+    
+    $('#subtitle, #Pop').css('color', 'white');
 
 });
 
@@ -42,11 +40,11 @@ function hideTheImage() {
 }
 
 function removeAPara () {
-    $('#ranPara p:last').remove();
+    $('#randPara p:last').remove();
 }
 
 function addAPara () {
-    $('#ranPara').append('<p>ADDED</p>');
+    $('#randPara').append('<p>ADDED</p>');
 }
 
 function replaceWText () {
@@ -54,16 +52,14 @@ function replaceWText () {
 }
 
 function mouseOverMe() {
-    $("h1").html("Lol u suck n00b");
-    
-    //$(".yeah").css('background-color', 'green');
+    $("#asterisk").html("Good, Now click me");  
 }
 
 function mouseOutMe() {
-    $('h1').html('Click to find out more');
+    $('#asterisk').html('Hover over me');
 }
 
 function mouseClick() {
-    $('p').html('Leedleleedlelee');
+    $('#LooL').html('You have clicked the title');
 }
 
